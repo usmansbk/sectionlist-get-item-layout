@@ -1,5 +1,5 @@
 {
-  "name": "sectionlistgetitemlayout",
+  "name": "sectionlist-get-itemlayout",
   "version": "1.0.0",
   "description": "getItemLayout helper for react-native SectionList",
   "main": "index.js",
