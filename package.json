@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./node_modules/.bin/babel index.js --out-dir lib --plugins=@babel/plugin-transform-arrow-functions",
     "test": "jest",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
