@@ -1,8 +1,8 @@
 {
   "name": "sectionlist-get-itemlayout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "getItemLayout helper for react-native SectionList",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel index.js --out-dir lib --plugins=@babel/plugin-transform-arrow-functions",
     "test": "jest",
