@@ -1,4 +1,13 @@
 
+/**
+ * @callback getItemHeight
+ * @callback getSeparatorHeight
+ * @callback getSectionHeaderHeight
+ * @callback getSectionFooterHeight
+ * @param {number} [listFooterHeight]
+ * @param {number} [listFooterHeight]
+ * @returns {object} - { index, offset, length }
+ */
 export default getSectionItemLayout = ({
 	getItemHeight = () => 0,
 	getSeparatorHeight = () => 0,
@@ -8,7 +17,6 @@ export default getSectionItemLayout = ({
 	listFooterHeight = 0,
 }) => (sections, index) => {
 	let length = 0, offset = 0, currentIndex = 0;
-
 	while (currentIndex < index) {
 		offset += length;
 		length = currentIndex > 0 ? listFooterHeight : listHeaderHeight;
@@ -17,24 +25,22 @@ export default getSectionItemLayout = ({
 		for (let sectionIndex = 0; ((sectionIndex < sectionsLength) && (currentIndex < index)); sectionIndex++) {
 			offset += length;
 			length = getSectionHeaderHeight(sectionIndex);
-			
 			currentIndex++;
 			const sectionData = sections[sectionIndex].data;
 			const dataLength = sectionData.length;
 			for (let dataIndex = 0; ((dataIndex < dataLength) && (currentIndex < index)); dataIndex++) {
-				offset +=length;
+				offset += length;
 				const separator_height = dataIndex < dataLength - 1 ? getSeparatorHeight(sectionIndex, dataIndex) : 0;
 				length = getItemHeight(sectionData[dataIndex], sectionIndex, dataIndex) + separator_height;
 				currentIndex++;
 			}
 			if (!dataLength && (currentIndex < index)) {
-				offset +=length;
+				offset += length;
 				length = getSectionFooterHeight(sectionIndex);
 				currentIndex++;
 			}
 		}
 	}
-
 	return {
 		index,
 		length,
