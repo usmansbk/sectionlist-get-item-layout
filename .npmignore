@@ -1,4 +1,3 @@
-.gitignore
-index.js
-index.spec.js
+node_modules
+yarn-error.log
 coverage
