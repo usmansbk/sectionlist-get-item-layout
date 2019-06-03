@@ -4,7 +4,9 @@
   "description": "getItemLayout helper for react-native SectionList",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "build": "./node_modules/.bin/babel index.js --out-dir lib",
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
