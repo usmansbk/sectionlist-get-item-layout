@@ -4,7 +4,7 @@
   "description": "getItemLayout helper for react-native SectionList",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel index.js --out-dir lib",
+    "build": "./node_modules/.bin/babel index.js --out-dir lib --plugins=@babel/plugin-transform-arrow-functions",
     "test": "jest",
     "prepublish": "npm run build"
   },
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "jest": "^24.8.0"
