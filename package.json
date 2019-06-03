@@ -1,0 +1,24 @@
+{
+  "name": "sectionlistgetitemlayout",
+  "version": "1.0.0",
+  "description": "getItemLayout helper for react-native SectionList",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmansbk/sectionlist-get-item-layout.git"
+  },
+  "keywords": [
+    "react-native",
+    "section-list",
+    "getItemLayout"
+  ],
+  "author": "Babakolo Usman Suleiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usmansbk/sectionlist-get-item-layout/issues"
+  },
+  "homepage": "https://github.com/usmansbk/sectionlist-get-item-layout#readme"
+}
