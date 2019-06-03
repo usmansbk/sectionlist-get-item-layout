@@ -8,7 +8,7 @@
  * @param {number} [listFooterHeight]
  * @returns {object} - { index, offset, length }
  */
-export default getSectionItemLayout = ({
+const getSectionItemLayout = ({
 	getItemHeight = () => 0,
 	getSeparatorHeight = () => 0,
 	getSectionHeaderHeight = () => 0,
@@ -47,3 +47,6 @@ export default getSectionItemLayout = ({
 		offset
 	};
 }
+
+
+export default getSectionItemLayout;
