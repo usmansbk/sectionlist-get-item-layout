@@ -1,4 +1,4 @@
-import sectionListGetItemLayout from '.';
+const sectionListGetItemLayout = require('./lib').default
 
 test('Empty sections', () => {
   const getItemLayout = sectionListGetItemLayout({
