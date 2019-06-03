@@ -3,7 +3,7 @@
 This package provides a function that helps you construct the `getItemLayout` function for your `SectionList`s. It's interface is based on [react-native-section-list-get-item-layout](https://medium.com/@jsoendermann/sectionlist-and-getitemlayout-2293b0b916fb). It's meant to be used like this:
 
 ```javascript
-import sectionListGetItemLayout from 'reactnative-sectionlist-getitemlayout';
+import sectionListGetItemLayout from 'sectionlist-get-item-layout';
 
 class MyComponent extends React.Component {
 
