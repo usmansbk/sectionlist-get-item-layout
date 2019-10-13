@@ -1,6 +1,6 @@
 {
   "name": "sectionlist-get-itemlayout",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "getItemLayout helper for react-native SectionList",
   "main": "./lib/index.js",
   "files": [
